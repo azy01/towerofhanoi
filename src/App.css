@@ -1,42 +1,72 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.hanoi-app {
+	font-family: "Segoe UI", "Roboto", Arial, sans-serif;
+	background: #f4f7fa;
+	min-height: 100vh;
+	color: #222;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+	font-size: 2.5rem;
+	margin-bottom: 0.5em;
+	margin-top: 0;
+	padding-top: 0.5em;
+	letter-spacing: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button,
+select {
+	font-size: 1rem;
+	padding: 0.4em 1em;
+	border-radius: 5px;
+	border: 1px solid #007bff;
+	background: #fff;
+	color: #007bff;
+	margin: 0 0.2em;
+	cursor: pointer;
+	transition: background 0.2s, color 0.2s;
+}
+button:hover,
+select:hover {
+	background: #007bff;
+	color: #fff;
 }
 
-.card {
-  padding: 2em;
+.demo-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
 }
-
-.read-the-docs {
-  color: #888;
+.demo-content {
+	background: #fff;
+	padding: 2em;
+	border-radius: 12px;
+	box-shadow: 0 4px 32px rgba(0, 0, 0, 0.15);
+	max-width: 90vw;
+	max-height: 80vh;
+	overflow-y: auto;
+}
+.demo-content h2 {
+	margin-top: 0;
+	color: #007bff;
+}
+.demo-content button {
+	margin-top: 1em;
+	background: #007bff;
+	color: #fff;
+	border: none;
 }
